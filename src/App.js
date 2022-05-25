@@ -1,6 +1,14 @@
 import './styles/App.css';
 import twitterLogo from './assets/twitter-logo.svg';
 import React from "react";
+import {
+  Form,
+  Image,
+  Button,
+  ProgressBar,
+  Container,
+  Badge
+} from 'react-bootstrap'
 
 // Constants
 const TWITTER_HANDLE = '_buildspace';
@@ -17,14 +25,35 @@ const App = () => {
   );
 
   return (
+    
     <div className="App">
+   
+   <div className="connectWalletDiv">
+      {renderNotConnectedContainer()}
+      </div>
       <div className="container">
         <div className="header-container">
-          <p className="header gradient-text">My NFT Collection</p>
+          <p className="header gradient-text">NFT MAKER</p>
           <p className="sub-text">
-            Each unique. Each beautiful. Discover your NFT today.
+          Create your NFT's and List to OpenaSea TestNet.
           </p>
-          {renderNotConnectedContainer()}
+         
+         <div className="add-image-div">
+         <div>
+            <Form>
+                <Form.Control
+                    required
+                    type='file'
+                    accept='image/*'
+                    
+                    className='mb-3'
+                />
+
+              
+            </Form>
+        </div>
+         </div>
+
         </div>
         <div className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
