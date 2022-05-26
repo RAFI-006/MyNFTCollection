@@ -69,10 +69,19 @@
   margin: auto;
   background: #f3f3f3;
   display: flex;
+  margin-bottom: 40px;
   justify-content: space-between;
 
   
   border-color: #f9f9f9;
+
+}
+
+.form-div{
+
+margin-top: 15px;
+margin-left: 10px;
+
 
 }
 
@@ -81,6 +90,35 @@
   background-size: 200% 200%;
  
   animation: gradient-animation 4s ease infinite;
+}
+
+.mint-nft-button
+{
+  margin-top: 10px;
+  height: 45px;
+  border: 0;
+  width: auto;
+  padding-left: 40px;
+  
+  padding-right: 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: -webkit-linear-gradient(left, #d0da46 20%, #b10ad3 80%);
+  background-size: 200% 200%;
+ 
+  animation: gradient-animation 4s ease infinite;
+
+}
+
+.progressbar-div
+{  width: auto;
+  height: 100px;
+   margin: auto;
+  flex-direction: column;
+  display: flex;
 }
 
 .mint-button {
@@ -94,6 +132,27 @@
   background-color: rgb(32, 129, 226);
 }
 
+.image-preview
+{
+  flex-direction: column;
+  display: flex;
+  width: 40%;
+  margin: auto;
+
+}
+.title-descriptin-div
+{
+  flex-direction: column;
+  display: flex;
+  width: 40%;
+  margin: auto;
+}
+
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
 .mint-count {
   color: white;
   font-size: 18px;
